@@ -9,6 +9,7 @@ lifecycleRuntimeKtx = "2.8.6"
 activityCompose = "1.9.2"
 composeBom = "2024.09.03"
 camerax = "1.4.0-rc03"
+visionCommon = "17.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,6 +32,8 @@ camerax-video = { module = "androidx.camera:camera-video", version.ref = "camera
 camerax-view = { module = "androidx.camera:camera-view", version.ref = "camerax" }
 camerax-mlkit = { module = "androidx.camera:camera-mlkit-vision", version.ref = "camerax" }
 camerax-ext = { module = "androidx.camera:camera-extensions", version.ref = "camerax" }
+mlkit-barcode = { module = "com.google.mlkit:barcode-scanning", version = "17.3.0" }
+vision-common = { group = "com.google.mlkit", name = "vision-common", version.ref = "visionCommon" }
 
 [bundles]
 camerax = ["camerax", "camerax-lifecycle", "camerax-video", "camerax-view", "camerax-mlkit", "camerax-ext"]

@@ -26,6 +26,8 @@ class MainViewModel :
 
             is CameraScreenUiEvent.OnPictureTaken -> onPictureTakenEvent(event)
 
+            is CameraScreenUiEvent.OnBarcodeScanned -> _uiState.update { it.copy(barcodes = event.barcodes) }
+
             else -> Unit
         }
     }
